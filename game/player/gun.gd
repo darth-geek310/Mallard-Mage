@@ -11,12 +11,12 @@ const BULLET_SCENE = preload("res://player/bullet.tscn")
 
 
 # This method is only called by Player.gd.
-func shoot(direction: float = 1.0) -> bool:
+func shoot(direction: Vector2) -> bool:
 	if not timer.is_stopped():
 		return false
 	var bullet := BULLET_SCENE.instantiate() as Bullet
 	bullet.global_position = global_position
-	bullet.linear_velocity = Vector2(direction * BULLET_VELOCITY, 0.0)
+	bullet.linear_velocity = direction.normalized() * BULLET_VELOCITY
 
 	bullet.set_as_top_level(true)
 	add_child(bullet)
