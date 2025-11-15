@@ -21,8 +21,29 @@ var gravity: int = ProjectSettings.get("physics/2d/default_gravity")
 @onready var jump_sound := $Jump as AudioStreamPlayer2D
 @onready var gun = sprite.get_node(^"Gun") as Gun
 @onready var camera := $Camera as Camera2D
+@onready var aiming_arrow = $AimingArrow # adjust path
 var _double_jump_charged := false
+var selected_spell = "fireball"
 
+func _ready():
+	update_arrow_mode()
+	
+func select_spell(spell_name):
+	selected_spell = spell_name
+	update_arrow_mode()
+	
+func update_arrow_mode():
+	match selected_spell:
+		"fireball":
+			aiming_arrow.visible = true
+			aiming_arrow.arc_degrees = 90
+			aiming_arrow.rotation = 0
+		"grapple":
+			aiming_arrow.visible = true
+			aiming_arrow.arc_degrees = 90
+			aiming_arrow.rotation = deg_to_rad(45)
+		"time stop":
+			aiming_arrow.visible = false
 
 func _physics_process(delta: float) -> void:
 	if is_on_floor():
@@ -49,7 +70,8 @@ func _physics_process(delta: float) -> void:
 
 	var is_shooting := false
 	if Input.is_action_just_pressed("shoot" + action_suffix):
-		is_shooting = gun.shoot(sprite.scale.x)
+		var aim_direction = $AimingArrow.global_transform.basis_xform(Vector2.RIGHT).normalized()
+		is_shooting = gun.shoot(aim_direction)
 
 	var animation := get_new_animation(is_shooting)
 	if animation != animation_player.current_animation and shoot_timer.is_stopped():
