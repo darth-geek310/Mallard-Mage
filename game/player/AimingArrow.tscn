@@ -1,11 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://ctgumjaytuoch"]
+[gd_scene load_steps=19 format=3 uid="uid://c1fl37avrlu3y"]
 
-[ext_resource type="Script" uid="uid://cgfscrxgnhieb" path="res://player/player.gd" id="1_44x8d"]
-[ext_resource type="Texture2D" path="res://player/robot.webp" id="2_ivpvi"]
-[ext_resource type="Script" uid="uid://dfrsoer1idxwu" path="res://player/gun.gd" id="3_0v1st"]
-[ext_resource type="AudioStream" uid="uid://b01brytl75mwa" path="res://player/shoot.wav" id="4_6gtgk"]
-[ext_resource type="PackedScene" uid="uid://c1fl37avrlu3y" path="res://player/AimingArrow.tscn" id="5_cw150"]
-[ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="6_xii2b"]
+[ext_resource type="Script" uid="uid://cgfscrxgnhieb" path="res://player/player.gd" id="1_043s5"]
+[ext_resource type="Texture2D" path="res://player/robot.webp" id="2_xnq4h"]
+[ext_resource type="Script" uid="uid://dfrsoer1idxwu" path="res://player/gun.gd" id="3_c7bnl"]
+[ext_resource type="AudioStream" uid="uid://b01brytl75mwa" path="res://player/shoot.wav" id="4_06mfn"]
+[ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="5_rpmdn"]
+[ext_resource type="PackedScene" uid="uid://c1fl37avrlu3y" path="res://player/AimingArrow.tscn" id="6_h3q26"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "crouch"
@@ -191,7 +191,7 @@ scale = Vector2(0.8, 0.8)
 collision_mask = 30
 floor_constant_speed = true
 platform_on_leave = 2
-script = ExtResource("1_44x8d")
+script = ExtResource("1_043s5")
 
 [node name="ShootAnimation" type="Timer" parent="."]
 wait_time = 0.2
@@ -203,17 +203,17 @@ collision_mask = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -14)
-texture = ExtResource("2_ivpvi")
+texture = ExtResource("2_xnq4h")
 hframes = 8
 vframes = 8
 
 [node name="Gun" type="Marker2D" parent="Sprite2D"]
 position = Vector2(14, 1)
-script = ExtResource("3_0v1st")
+script = ExtResource("3_c7bnl")
 
 [node name="Shoot" type="AudioStreamPlayer2D" parent="Sprite2D/Gun"]
 position = Vector2(-30.6589, -6.13176)
-stream = ExtResource("4_6gtgk")
+stream = ExtResource("4_06mfn")
 
 [node name="Cooldown" type="Timer" parent="Sprite2D/Gun"]
 wait_time = 0.3
@@ -224,7 +224,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_jnr5f")
 }
 
-[node name="AimingArrow" parent="." instance=ExtResource("5_cw150")]
+[node name="AimingArrow" parent="." instance=ExtResource("6_h3q26")]
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(0, -28)
@@ -239,7 +239,7 @@ position = Vector2(0, -14)
 shape = SubResource("11")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_xii2b")
+stream = ExtResource("5_rpmdn")
 volume_db = -3.0
 
 [node name="UI" type="CanvasLayer" parent="."]
