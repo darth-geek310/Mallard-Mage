@@ -25,7 +25,6 @@ func _process(delta):
 		print("Paused")
 		velocity.x = 0
 		velocity.y = 0
-		get_new_animation()
 		return
 
 func _physics_process(delta: float) -> void:
