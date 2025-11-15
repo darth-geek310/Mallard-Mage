@@ -26,6 +26,7 @@ shape = SubResource("1")
 one_way_collision = true
 
 [node name="g67" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(77, -37)
@@ -33,6 +34,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("3")
 
 [node name="g69" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-1.99999, -38)
@@ -40,6 +42,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("3")
 
 [node name="g68" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-52, -35)
@@ -47,6 +50,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("3")
 
 [node name="g1" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-36, -35)
@@ -54,6 +58,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("5")
 
 [node name="g3" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-82, -33)
@@ -61,6 +66,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("5")
 
 [node name="g2" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(31, -36)
@@ -68,6 +74,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("5")
 
 [node name="g4" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-22, -30)
@@ -75,6 +82,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("5")
 
 [node name="g14" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(51, -38)
@@ -82,6 +90,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("4")
 
 [node name="g17" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(65, -32)
@@ -89,6 +98,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("4")
 
 [node name="g16" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(17, -36)
@@ -96,6 +106,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("4")
 
 [node name="g15" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-71, -35)
@@ -103,6 +114,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("4")
 
 [node name="B3" type="Sprite2D" parent="."]
+visible = false
 z_index = -2
 material = ExtResource("1")
 position = Vector2(-2, -58)
@@ -111,6 +123,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("6")
 
 [node name="B4" type="Sprite2D" parent="."]
+visible = false
 z_index = -2
 material = ExtResource("1")
 position = Vector2(37, -42)
@@ -119,12 +132,14 @@ scale = Vector2(1, -1)
 texture = ExtResource("6")
 
 [node name="B5" type="Sprite2D" parent="."]
+visible = false
 z_index = -2
 material = ExtResource("1")
 position = Vector2(-32, -41)
 texture = ExtResource("6")
 
 [node name="v31" type="Sprite2D" parent="."]
+visible = false
 z_index = 1
 material = ExtResource("1")
 position = Vector2(-21, 18)
@@ -132,6 +147,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("8")
 
 [node name="v35" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(35, 7)
@@ -139,6 +155,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("8")
 
 [node name="v32" type="Sprite2D" parent="."]
+visible = false
 z_index = 1
 material = ExtResource("1")
 position = Vector2(87, 16)
@@ -146,6 +163,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("8")
 
 [node name="v33" type="Sprite2D" parent="."]
+visible = false
 z_index = 1
 material = ExtResource("1")
 position = Vector2(-85, 15)
@@ -153,6 +171,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("7")
 
 [node name="v34" type="Sprite2D" parent="."]
+visible = false
 z_index = 1
 material = ExtResource("1")
 position = Vector2(56, 18)
@@ -160,6 +179,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("7")
 
 [node name="v36" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-9, 11)
@@ -167,6 +187,7 @@ scale = Vector2(1, -1)
 texture = ExtResource("7")
 
 [node name="v37" type="Sprite2D" parent="."]
+visible = false
 z_index = -1
 material = ExtResource("1")
 position = Vector2(-61, 7)

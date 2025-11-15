@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc7o7t0ramd6y"
-path="res://.godot/imported/robot.webp-39f680d53df0b170662860aae7393568.ctex"
+uid="uid://crpgcwdlm3xl3"
+path="res://.godot/imported/castle_inside.jpeg-5cc41ad5b6cd5328dfe9ea976d863c15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/robot.webp"
-dest_files=["res://.godot/imported/robot.webp-39f680d53df0b170662860aae7393568.ctex"]
+source_file="res://level/background/castle_inside.jpeg"
+dest_files=["res://.godot/imported/castle_inside.jpeg-5cc41ad5b6cd5328dfe9ea976d863c15.ctex"]
 
 [params]
 

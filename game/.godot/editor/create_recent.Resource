@@ -1,1 +1,2 @@
-Image
+RectangleShape2D
+SpriteFrames
