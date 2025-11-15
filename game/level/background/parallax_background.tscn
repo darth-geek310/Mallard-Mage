@@ -9,8 +9,8 @@ scroll_base_scale = Vector2(0.1, 0)
 motion_scale = Vector2(0.2, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Outside Castle"]
-position = Vector2(-809, 2)
-scale = Vector2(8.938182, 5.8907104)
+position = Vector2(-272.99997, -43)
+scale = Vector2(7.24, 5.284153)
 texture = ExtResource("1_32pag")
 centered = false
 

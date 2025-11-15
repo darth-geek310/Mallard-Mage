@@ -18,6 +18,7 @@ position = Vector2(-1, 0)
 collision_layer = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.1836355, 0.53256035, 0.7250544, 1)
 texture = ExtResource("2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -222,14 +222,14 @@ one_shot = true
 libraries = {
 &"": SubResource("AnimationLibrary_jnr5f")
 }
+autoplay = "crouch"
 
 [node name="Camera" type="Camera2D" parent="."]
-position = Vector2(0, -28)
-offset = Vector2(0, 50)
-limit_left = -715
-limit_top = -250
-limit_right = 1425
-limit_bottom = 690
+position = Vector2(0, -30)
+zoom = Vector2(0.8, 0.8)
+limit_smoothed = true
+position_smoothing_enabled = true
+editor_draw_screen = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3.7500017, -39.218708)

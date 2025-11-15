@@ -10,13 +10,17 @@ process_mode = 3
 script = ExtResource("2")
 
 [node name="Level" parent="." instance=ExtResource("3")]
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="Level" instance=ExtResource("4")]
-position = Vector2(106, 553)
+position = Vector2(-684, 931)
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 layer = 100
+follow_viewport_enabled = true
+follow_viewport_scale = 0.001
 
 [node name="PauseMenu" parent="InterfaceLayer" instance=ExtResource("4_x6l06")]
+metadata/_edit_lock_ = true
 
 [connection signal="coin_collected" from="Level/Player" to="InterfaceLayer/PauseMenu" method="_on_coin_collected"]
