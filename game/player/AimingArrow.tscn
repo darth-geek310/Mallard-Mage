@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1fl37avrlu3y"]
+
+[ext_resource type="Script" uid="uid://0kwgtsvbxapy" path="res://player/AimingArrow.gd" id="1_wrcwv"]
+[ext_resource type="Texture2D" uid="uid://ds4mkpis4uw46" path="res://player/AimingArrow.png" id="2_y5tpg"]
+
+[node name="AimingArrow" type="Node2D"]
+script = ExtResource("1_wrcwv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_y5tpg")
+offset = Vector2(35, -20)

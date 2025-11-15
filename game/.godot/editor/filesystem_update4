@@ -1,0 +1,10 @@
+res://level/level.tscn
+res://level/tileset.tres
+res://level/props/wind_sway.tres
+res://gui/theme.tres
+res://player/AimingArrow.tscn
+res://player/AimingArrow.gd
+res://player/player.gd
+res://player/player.tscn
+res://game_singleplayer.tscn
+res://player/gun.gd
