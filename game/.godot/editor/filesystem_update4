@@ -1,0 +1,13 @@
+res://player/player.gd
+res://game_singleplayer.tscn
+res://player/bullet.gd
+res://level/tileset.tres
+res://level/props/wind_sway.tres
+res://gui/theme.tres
+res://player/player.tscn
+res://player/bullet.tscn
+res://player/Fireball.tscn
+res://level/background/parallax_background.tscn
+res://player/gun.gd
+res://level/level.tscn
+res://level/platforms/platform.tscn
