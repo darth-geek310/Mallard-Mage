@@ -31,7 +31,7 @@ func _ready():
 func select_spell(spell_name):
 	selected_spell = spell_name
 	update_arrow_mode()
-	
+
 func update_arrow_mode():
 	match selected_spell:
 		"fireball":

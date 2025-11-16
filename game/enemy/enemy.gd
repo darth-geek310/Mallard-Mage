@@ -9,6 +9,7 @@ enum State {
 const WALK_SPEED = 22.0
 
 var _state := State.WALKING
+var is_paused: bool = false
 
 @onready var gravity: int = ProjectSettings.get("physics/2d/default_gravity")
 @onready var platform_detector := $PlatformDetector as RayCast2D
@@ -17,9 +18,17 @@ var _state := State.WALKING
 @onready var sprite := $Sprite2D as Sprite2D
 @onready var animation_player := $AnimationPlayer as AnimationPlayer
 
+func _process(delta):
+	if Input.is_action_pressed("time_stop"):
+		is_paused = true
+	if is_paused:
+		print("Paused")
+		velocity.x = 0
+		velocity.y = 0
+		return
 
 func _physics_process(delta: float) -> void:
-	if _state == State.WALKING and velocity.is_zero_approx():
+	if _state == State.WALKING and velocity.is_zero_approx() and not Input.is_action_pressed("time_stop"):
 		velocity.x = WALK_SPEED
 	velocity.y += gravity * delta
 	if not floor_detector_left.is_colliding():
