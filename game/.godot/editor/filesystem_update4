@@ -1,3 +1,5 @@
 res://player/player.tscn
 res://level/props/wind_sway.tres
 res://player/player.gd
+res://enemy/enemy.gd
+res://player/time_stop.gd
