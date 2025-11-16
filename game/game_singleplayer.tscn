@@ -1,10 +1,10 @@
 [gd_scene load_steps=19 format=3 uid="uid://bf3wnwihk7ymg"]
 
 [ext_resource type="Script" uid="uid://cgfscrxgnhieb" path="res://player/player.gd" id="1_hsw1h"]
-[ext_resource type="Texture2D" path="res://player/robot.webp" id="2_7ocom"]
+[ext_resource type="Texture2D" uid="uid://bxjuoq4mhfowb" path="res://player/duck.png" id="2_7ocom"]
 [ext_resource type="Script" uid="uid://dfrsoer1idxwu" path="res://player/gun.gd" id="3_c0k48"]
 [ext_resource type="AudioStream" uid="uid://b01brytl75mwa" path="res://player/shoot.wav" id="4_hspmi"]
-[ext_resource type="PackedScene" uid="uid://c1fl37avrlu3y" path="res://player/AimingArrow.tscn" id="5_u2xgy"]
+[ext_resource type="PackedScene" uid="uid://cbk83teh2jjcn" path="res://player/aiming_arrow.tscn" id="5_u2xgy"]
 [ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="6_lf6ks"]
 
 [sub_resource type="Animation" id="1"]
