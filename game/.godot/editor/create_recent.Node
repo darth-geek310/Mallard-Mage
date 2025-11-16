@@ -1,6 +1,7 @@
+Sprite2D
+Camera2D
 Timer
 CollisionShape2D
-Sprite2D
 Player
 CharacterBody2D
 AnimatedSprite2D

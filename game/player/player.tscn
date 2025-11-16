@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://vh7pmputa7r3"]
+[gd_scene load_steps=19 format=3 uid="uid://vh7pmputa7r3"]
 
 [ext_resource type="Texture2D" uid="uid://bxjuoq4mhfowb" path="res://player/duck.png" id="2_qjkh3"]
 [ext_resource type="Script" uid="uid://cgfscrxgnhieb" path="res://player/player.gd" id="3"]
 [ext_resource type="AudioStream" uid="uid://sjod173axgwf" path="res://player/jump.wav" id="5"]
 [ext_resource type="AudioStream" uid="uid://b01brytl75mwa" path="res://player/shoot.wav" id="6"]
+[ext_resource type="PackedScene" uid="uid://cbk83teh2jjcn" path="res://player/aiming_arrow.tscn" id="6_g6k8r"]
 [ext_resource type="Script" uid="uid://dfrsoer1idxwu" path="res://player/gun.gd" id="8"]
 
 [sub_resource type="Animation" id="1"]
@@ -222,14 +223,14 @@ one_shot = true
 libraries = {
 &"": SubResource("AnimationLibrary_jnr5f")
 }
+autoplay = "crouch"
 
 [node name="Camera" type="Camera2D" parent="."]
-position = Vector2(0, -28)
-offset = Vector2(0, 50)
-limit_left = -715
-limit_top = -250
-limit_right = 1425
-limit_bottom = 690
+position = Vector2(0, -30)
+zoom = Vector2(0.8, 0.8)
+limit_smoothed = true
+position_smoothing_enabled = true
+editor_draw_screen = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3.7500017, -39.218708)
@@ -269,3 +270,5 @@ position = Vector2(1870, 564)
 scale = Vector2(2, 2)
 action = "shoot"
 visibility_mode = 1
+
+[node name="AimingArrow" parent="." instance=ExtResource("6_g6k8r")]
